@@ -2,13 +2,13 @@
 
 This Source-to-Image builder let you create projects targetting Gitbook and build with gitbook-cli
 
-# Build the docker image
+## Build the docker image
 
 ```bash
 docker build -t openshift/s2i-gitbook .
 ```
 
-# Test
+## Test
 
 ```
 mkdir hello-world
@@ -16,7 +16,7 @@ cd hello-world
 gitbook init
 ```
 
-# Deploy
+## Deploy gitbook to Openshift through [cicd](https://github.com/hi-cli/hi-cicd)
 ```bash
 hi cicd deploy new build
 ```
